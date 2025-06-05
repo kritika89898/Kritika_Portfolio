@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritika Bhanaria - Software Engineering Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-800/90 backdrop-blur-sm border-b border-gray-700">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">K</span>
+                    </div>
+                    <span class="text-xl font-semibold">Kritika Bhanaria</span>
+                </div>
+                <div class="desktop-menu hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                </div>
+                <button class="mobile-menu-button md:hidden text-white" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden bg-gray-800 border-t border-gray-700">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#about" class="block px-3 py-2 text-white hover:text-cyan-400 transition-colors" onclick="closeMobileMenu()">About</a>
+                    <a href="#skills" class="block px-3 py-2 text-white hover:text-cyan-400 transition-colors" onclick="closeMobileMenu()">Skills</a>
+                    <a href="#projects" class="block px-3 py-2 text-white hover:text-cyan-400 transition-colors" onclick="closeMobileMenu()">Projects</a>
+                    <a href="#contact" class="block px-3 py-2 text-white hover:text-cyan-400 transition-colors" onclick="closeMobileMenu()">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                        Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Kritika</span>
+                    </h1>
+                    <h2 class="text-xl sm:text-2xl text-gray-300">
+                        A Software Engineering student passionate about
+                        <span class="text-cyan-400">web development</span>,
+                        <span class="text-cyan-400">AI</span>, and building
+                        <span class="text-cyan-400">real-world solutions</span>.
+                    </h2>
+                    <p class="text-lg text-gray-400 leading-relaxed">
+                        Currently pursuing B.Tech at IGDTUW, graduating in 2027. I love creating innovative solutions 
+                        using Machine Learning and Cloud technologies to solve real-world problems.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a 
+                            href="#projects" 
+                            class="bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
+                        >
+                            View My Work
+                        </a>
+                        <a 
+                            href="https://drive.google.com/file/d/1f1aDP_fUQViO0iqGzJS824lzbY9zdmjV/view?usp=drive_link" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="border border-gray-600 px-6 py-3 rounded-lg font-semibold hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300"
+                        >
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <div class="w-80 h-80 rounded-full overflow-hidden border-4 border-gradient-to-r from-cyan-500 to-blue-500 shadow-2xl shadow-cyan-500/20">
+                            <img 
+                                src="https://images.unsplash.com/photo-1569012871812-f38ee64cd54c" 
+                                alt="Kritika Bhanaria"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-2xl -z-10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">
+                About <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Me</span>
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-cyan-400">Education & Background</h3>
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                            <h4 class="text-xl font-semibold mb-2">B.Tech in Software Engineering</h4>
+                            <p class="text-cyan-400 mb-2">Indira Gandhi Delhi Technical University for Women (IGDTUW)</p>
+                            <p class="text-gray-400">Expected Graduation: 2027</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-cyan-400">Interests & Passion</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                            <span class="text-lg">Web Development & Frontend Technologies</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                            <span class="text-lg">Artificial Intelligence & Machine Learning</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                            <span class="text-lg">Cloud Technologies & AWS</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                            <span class="text-lg">Building Real-world Solutions</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        I'm passionate about leveraging technology to create meaningful impact. Whether it's building 
+                        intelligent systems or crafting seamless user experiences, I love turning ideas into reality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">
+                Skills & <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Technologies</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Programming Languages -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-500/50 transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-cyan-400 mb-4">Programming Languages</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">C++</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">Python</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">JavaScript</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">HTML</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">CSS</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-500/50 transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-cyan-400 mb-4">Frameworks & Libraries</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">Machine Learning</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">Scikit-learn</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">NLP</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">DBMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-500/50 transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-cyan-400 mb-4">Tools & Technologies</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">VS Code</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">Git/GitHub</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">Jupyter Notebook</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">OOPs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Platforms -->
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-500/50 transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-cyan-400 mb-4">Cloud Platforms</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">AWS</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">Google Cloud Platform</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></div>
+                            <span class="text-gray-300">Vertex AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">
+                Featured <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Projects</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Cineverse Project -->
+                <div class="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden hover:border-cyan-500/50 transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" 
+                            alt="Cineverse"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-cyan-400 mb-3">Cineverse</h3>
+                        <p class="text-gray-400 mb-4 leading-relaxed">An interactive entertainment platform for discovering movies, series, and episodes with personalized content. Built with modern web technologies for seamless user experience.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a 
+                                href="https://github.com/kritika89898/cineverse" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="text-cyan-400 hover:text-cyan-300 transition-colors"
+                            >
+                                View Code →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI PYQ Predictor Project -->
+                <div class="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden hover:border-cyan-500/50 transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" 
+                            alt="AI-powered PYQ Predictor"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-cyan-400 mb-3">AI-powered PYQ Predictor</h3>
+                        <p class="text-gray-400 mb-4 leading-relaxed">Intelligent system that predicts possible exam questions based on past year question papers using Natural Language Processing and Machine Learning algorithms.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">NLP</span>
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Machine Learning</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a 
+                                href="#" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="text-cyan-400 hover:text-cyan-300 transition-colors"
+                            >
+                                View Code →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fake News Detection Project -->
+                <div class="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden hover:border-cyan-500/50 transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden">
+                        <img 
+                            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
+                            alt="Fake News Detection Using ML"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-cyan-400 mb-3">Fake News Detection Using ML</h3>
+                        <p class="text-gray-400 mb-4 leading-relaxed">Machine Learning model that classifies news articles as genuine or fake using Natural Language Processing techniques. Helps combat misinformation spread.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">NLP</span>
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Scikit-learn</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a 
+                                href="https://github.com/kritika89898/fake-news-detection" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="text-cyan-400 hover:text-cyan-300 transition-colors"
+                            >
+                                View Code →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Big Market Sales Prediction Project -->
+                <div class="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden hover:border-cyan-500/50 transition-all duration-300 group">
+                    <div class="h-48 overflow-hidden">
+                        <img 
+                            src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg" 
+                            alt="Big Market Sales Prediction"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-cyan-400 mb-3">Big Market Sales Prediction</h3>
+                        <p class="text-gray-400 mb-4 leading-relaxed">Predictive analytics model for retail sales forecasting using historical data. Helps businesses make data-driven decisions for inventory and marketing.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Machine Learning</span>
+                            <span class="px-3 py-1 bg-gray-700 text-cyan-400 rounded-full text-sm">Data Analysis</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a 
+                                href="https://github.com/kritika89898/big-market-sales" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="text-cyan-400 hover:text-cyan-300 transition-colors"
+                            >
+                                View Code →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">
+                Get In <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Touch</span>
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-cyan-400 mb-4">Let's Connect!</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            I'm always excited to discuss new opportunities, collaborate on projects, 
+                            or just chat about technology. Feel free to reach out!
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                                <span class="text-white">📧</span>
+                            </div>
+                            <div>
+                                <p class="text-cyan-400 font-semibold">Email</p>
+                                <a href="mailto:kritikabhanariya101@gmail.com" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                                    kritikabhanariya101@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                                <span class="text-white">💼</span>
+                            </div>
+                            <div>
+                                <p class="text-cyan-400 font-semibold">LinkedIn</p>
+                                <a 
+                                    href="https://linkedin.com/in/kritika-bhanaria-434242285" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="text-gray-400 hover:text-cyan-400 transition-colors"
+                                >
+                                    linkedin.com/in/kritika-bhanaria
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                                <span class="text-white">🔗</span>
+                            </div>
+                            <div>
+                                <p class="text-cyan-400 font-semibold">GitHub</p>
+                                <a 
+                                    href="https://github.com/kritika89898" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="text-gray-400 hover:text-cyan-400 transition-colors"
+                                >
+                                    github.com/kritika89898
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-cyan-400 mb-2">
+                                Name
+                            </label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-cyan-400 text-white"
+                            />
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-cyan-400 mb-2">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-cyan-400 text-white"
+                            />
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-cyan-400 mb-2">
+                                Message
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                rows="4"
+                                class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:border-cyan-400 text-white resize-none"
+                            ></textarea>
+                        </div>
+                        <button
+                            type="submit"
+                            class="w-full bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300"
+                        >
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-gray-800 border-t border-gray-700">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-gray-400">
+                © 2025 Kritika Bhanaria. Built with HTML, CSS & JavaScript.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
