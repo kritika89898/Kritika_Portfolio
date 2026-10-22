@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono', ui-monospace, monospace">
+  <rect width="800" height="450" fill="#101C2E"/>
+  <g stroke="#1E3049" stroke-width="1">
+    <path d="M60 90H740M60 150H740M60 210H740M60 270H740M60 330H740"/>
+  </g>
+  <path d="M60 370H740" stroke="#2A4060" stroke-width="2"/>
+  <!-- actual sales bars -->
+  <g fill="#2A4060">
+    <rect x="90" y="250" width="44" height="120" rx="3"/>
+    <rect x="170" y="200" width="44" height="170" rx="3"/>
+    <rect x="250" y="226" width="44" height="144" rx="3"/>
+    <rect x="330" y="160" width="44" height="210" rx="3"/>
+    <rect x="410" y="186" width="44" height="184" rx="3"/>
+    <rect x="490" y="130" width="44" height="240" rx="3"/>
+    <rect x="570" y="150" width="44" height="220" rx="3"/>
+    <rect x="650" y="104" width="44" height="266" rx="3"/>
+  </g>
+  <!-- prediction line -->
+  <polyline fill="none" stroke="#F4B740" stroke-width="3" stroke-linejoin="round" stroke-dasharray="0"
+    points="112,244 192,208 272,218 352,166 432,180 512,138 592,144 672,110"/>
+  <g fill="#F4B740">
+    <circle cx="112" cy="244" r="5"/><circle cx="192" cy="208" r="5"/><circle cx="272" cy="218" r="5"/><circle cx="352" cy="166" r="5"/>
+    <circle cx="432" cy="180" r="5"/><circle cx="512" cy="138" r="5"/><circle cx="592" cy="144" r="5"/><circle cx="672" cy="110" r="5"/>
+  </g>
+  <g font-size="14">
+    <rect x="60" y="34" width="14" height="14" fill="#2A4060"/><text x="82" y="46" fill="#8C9DB5">actual outlet sales</text>
+    <rect x="270" y="39" width="22" height="4" fill="#F4B740"/><text x="300" y="46" fill="#8C9DB5">model prediction</text>
+  </g>
+  <g font-size="12" fill="#8C9DB5" text-anchor="middle">
+    <text x="112" y="394">OUT010</text><text x="192" y="394">OUT013</text><text x="272" y="394">OUT017</text><text x="352" y="394">OUT018</text>
+    <text x="432" y="394">OUT027</text><text x="512" y="394">OUT035</text><text x="592" y="394">OUT046</text><text x="672" y="394">OUT049</text>
+  </g>
+</svg>

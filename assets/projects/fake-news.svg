@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" font-family="'JetBrains Mono', ui-monospace, monospace">
+  <rect width="800" height="450" fill="#101C2E"/>
+  <g stroke="#1E3049" stroke-width="1">
+    <path d="M0 50H800M0 100H800M0 150H800M0 200H800M0 250H800M0 300H800M0 350H800M0 400H800"/>
+    <path d="M50 0V450M100 0V450M150 0V450M200 0V450M250 0V450M300 0V450M350 0V450M400 0V450M450 0V450M500 0V450M550 0V450M600 0V450M650 0V450M700 0V450M750 0V450"/>
+  </g>
+  <!-- headline snippets being scored -->
+  <g font-size="15">
+    <rect x="48" y="78" width="300" height="44" rx="6" fill="#16263D" stroke="#2A4060"/>
+    <rect x="62" y="94" width="150" height="10" rx="3" fill="#8C9DB5" opacity=".7"/>
+    <rect x="220" y="94" width="60" height="10" rx="3" fill="#8C9DB5" opacity=".4"/>
+    <text x="300" y="105" fill="#4FD1C5">REAL</text>
+    <rect x="48" y="136" width="300" height="44" rx="6" fill="#16263D" stroke="#2A4060"/>
+    <rect x="62" y="152" width="110" height="10" rx="3" fill="#8C9DB5" opacity=".7"/>
+    <rect x="180" y="152" width="90" height="10" rx="3" fill="#8C9DB5" opacity=".4"/>
+    <text x="300" y="163" fill="#F4B740">FAKE</text>
+    <rect x="48" y="194" width="300" height="44" rx="6" fill="#16263D" stroke="#2A4060"/>
+    <rect x="62" y="210" width="170" height="10" rx="3" fill="#8C9DB5" opacity=".7"/>
+    <text x="300" y="221" fill="#4FD1C5">REAL</text>
+    <rect x="48" y="252" width="300" height="44" rx="6" fill="#16263D" stroke="#2A4060"/>
+    <rect x="62" y="268" width="90" height="10" rx="3" fill="#8C9DB5" opacity=".7"/>
+    <rect x="160" y="268" width="100" height="10" rx="3" fill="#8C9DB5" opacity=".4"/>
+    <text x="300" y="279" fill="#F4B740">FAKE</text>
+  </g>
+  <text x="48" y="350" font-size="14" fill="#8C9DB5">TF-IDF → Logistic Regression</text>
+  <text x="48" y="384" font-size="30" fill="#E4EAF3" font-weight="700">97.9% test accuracy</text>
+  <!-- confusion matrix -->
+  <g transform="translate(470 92)">
+    <rect width="120" height="120" fill="#4FD1C5" opacity=".9"/>
+    <rect x="124" width="120" height="120" fill="#4FD1C5" opacity=".12"/>
+    <rect y="124" width="120" height="120" fill="#4FD1C5" opacity=".12"/>
+    <rect x="124" y="124" width="120" height="120" fill="#4FD1C5" opacity=".85"/>
+    <g font-size="13" fill="#8C9DB5">
+      <text x="60" y="-12" text-anchor="middle">pred real</text>
+      <text x="184" y="-12" text-anchor="middle">pred fake</text>
+      <text x="-12" y="64" text-anchor="end">real</text>
+      <text x="-12" y="188" text-anchor="end">fake</text>
+    </g>
+    <g font-size="22" font-weight="700" text-anchor="middle">
+      <text x="60" y="68" fill="#0D1726">TP</text>
+      <text x="184" y="68" fill="#8C9DB5">FN</text>
+      <text x="60" y="192" fill="#8C9DB5">FP</text>
+      <text x="184" y="192" fill="#0D1726">TN</text>
+    </g>
+  </g>
+</svg>

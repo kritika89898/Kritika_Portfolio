@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kritika Bhanaria – Software Engineer</title>
+  <meta name="description" content="Kritika Bhanaria, B.Tech CSE-AI student at IGDTUW (2027). Full-stack and systems projects: ExamForge, ProToolsDirectory, an eBPF/XDP packet filter at DRDO, and more.">
+  <meta name="theme-color" content="#0D1726">
+  <meta property="og:title" content="Kritika Bhanaria – Software Engineer">
+  <meta property="og:description" content="Full-stack and systems projects, experience and achievements.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kritika89898.github.io/Kritika_Portfolio/">
+  <meta property="og:image" content="https://kritika89898.github.io/Kritika_Portfolio/assets/projects/examforge-ai-studio.webp">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      const t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a href="#top" class="brand" aria-label="Kritika Bhanaria, back to top">
+        <span class="brand__mark" aria-hidden="true">kb</span>
+        <span class="brand__name">Kritika Bhanaria</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch colour theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        </button>
+        <a class="btn btn--small" href="https://drive.google.com/file/d/1MD1mdOTZtzz-3Khr2-LRqMDIds7-cI4m/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume</a>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero wrap">
+      <div class="hero__copy">
+        <p class="status"><span class="status__dot" aria-hidden="true"></span>Open to SDE internships and 2027 new-grad roles</p>
+        <h1 class="hero__name">Kritika<br>Bhanaria</h1>
+        <p class="hero__lede">
+          I build software from the packet layer up: an eBPF/XDP packet filter at DRDO,
+          an AI exam-prep portal for IGDTUW students that costs ₹0 to run, and web tools people actually use.
+        </p>
+        <p class="hero__meta">B.Tech, Computer Science &amp; AI at IGDTUW, Delhi. Graduating 2027.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#work">See my work</a>
+          <a class="btn btn--ghost" href="https://github.com/kritika89898" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="gh"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.330-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.240-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.060.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn--ghost" href="https://linkedin.com/in/kritika-bhanaria-434242285" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- Interactive terminal -->
+      <div class="term" id="terminal">
+        <div class="term__bar">
+          <span class="term__lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="term__title">kritika@igdtuw: ~</span>
+        </div>
+        <div class="term__body" id="termBody" role="log" aria-live="polite" aria-label="Terminal output"></div>
+        <form class="term__input" id="termForm" autocomplete="off">
+          <label for="termIn" class="term__prompt">$</label>
+          <input id="termIn" type="text" spellcheck="false" autocapitalize="off" placeholder="type help, then press Enter" aria-label="Terminal command. Type help to list commands.">
+        </form>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section wrap" id="work" aria-labelledby="work-h">
+      <div class="section__head">
+        <h2 id="work-h">Selected work</h2>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-filter="fullstack" aria-pressed="false">Full-stack</button>
+          <button type="button" class="chip" data-filter="ml" aria-pressed="false">AI / ML</button>
+          <button type="button" class="chip" data-filter="frontend" aria-pressed="false">Frontend &amp; games</button>
+        </div>
+      </div>
+
+      <!-- Featured: ExamForge -->
+      <article class="feature project" data-tags="fullstack ml">
+        <div class="feature__media">
+          <div class="shots">
+            <img src="assets/projects/examforge-ai-studio.webp" alt="ExamForge AI Studio listing important topics and likely questions for Machine Learning mid-semester" width="1400" height="632">
+            <img src="assets/projects/examforge-branches.webp" alt="ExamForge branch overview with papers per department" width="1400" height="631" loading="lazy" hidden>
+            <img src="assets/projects/examforge-home.webp" alt="ExamForge home page" width="1400" height="636" loading="lazy" hidden>
+          </div>
+          <div class="shots__nav" role="group" aria-label="ExamForge screenshots">
+            <button type="button" class="dot is-active" aria-label="Show AI Studio" aria-pressed="true"></button>
+            <button type="button" class="dot" aria-label="Show branch overview" aria-pressed="false"></button>
+            <button type="button" class="dot" aria-label="Show home page" aria-pressed="false"></button>
+          </div>
+        </div>
+        <div class="feature__body">
+          <h3>ExamForge</h3>
+          <p class="project__lede">Previous-year IGDTUW exam papers in one place, plus an AI Studio that reads up to three years of papers and returns the topics that keep coming back and the questions most likely to appear.</p>
+          <ul class="facts">
+            <li><strong>76</strong> verified papers across <strong>16</strong> subjects, mapped to all 7 B.Tech branches</li>
+            <li><strong>152</strong> pre-computed AI answers, so the Gemini free-tier quota is spent only on student uploads</li>
+            <li>Model fallback with a 40 s budget per call: a slow model shows a live timer, not a frozen page</li>
+            <li>No database and nothing that sleeps: PDFs served from Vercel’s CDN for <strong>₹0</strong> a month</li>
+          </ul>
+          <ul class="stack" aria-label="Tech stack">
+            <li>JavaScript</li><li>Node.js</li><li>Gemini API</li><li>Vercel Functions</li><li>PDF.js</li>
+          </ul>
+          <div class="links">
+            <a class="btn btn--small" href="https://exam-forge-coral.vercel.app/" target="_blank" rel="noopener noreferrer">Open live site</a>
+            <a class="link" href="https://github.com/kritika89898/ExamForge" target="_blank" rel="noopener noreferrer">Source code</a>
+            <a class="link" href="https://youtu.be/0jvvX_hamBg" target="_blank" rel="noopener noreferrer">Demo video</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="grid">
+        <article class="project card" data-tags="fullstack">
+          <a class="card__media" href="https://protoolsdirectory.kritika-protools-2026.workers.dev/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img src="assets/projects/protoolsdirectory.webp" alt="" width="1400" height="735" loading="lazy">
+          </a>
+          <div class="card__body">
+            <h3>ProToolsDirectory</h3>
+            <p>Describe a task, get the right tool. A searchable catalog of 100 verified web tools with ranked task matching, 50 prompt templates, and community submissions that pass an admin review queue before going live.</p>
+            <ul class="stack" aria-label="Tech stack"><li>TypeScript</li><li>Cloudflare Workers</li><li>SQLite</li><li>Drizzle ORM</li></ul>
+            <div class="links">
+              <a class="link" href="https://protoolsdirectory.kritika-protools-2026.workers.dev/" target="_blank" rel="noopener noreferrer">Live site</a>
+              <a class="link" href="https://github.com/kritika89898/ProToolsDirectory" target="_blank" rel="noopener noreferrer">Code</a>
+              <a class="link" href="https://youtu.be/AFR-ekVCo_w" target="_blank" rel="noopener noreferrer">Demo video</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project card" data-tags="frontend fullstack">
+          <a class="card__media" href="https://frontendcw.onrender.com/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img src="assets/projects/color-wars.webp" alt="" width="800" height="450" loading="lazy">
+          </a>
+          <div class="card__body">
+            <h3>Color Wars</h3>
+            <p>A chain-reaction strategy game: add orbs to your cells, overload them so they burst into neighbouring cells, and wipe out the opponent. Play against the computer or a friend.</p>
+            <ul class="stack" aria-label="Tech stack"><li>JavaScript</li><li>Node.js</li><li>REST APIs</li><li>Render</li></ul>
+            <div class="links">
+              <a class="link" href="https://frontendcw.onrender.com/" target="_blank" rel="noopener noreferrer">Play it</a>
+            </div>
+            <p class="note">Runs on Render’s free tier, so the first load can take about 30 seconds.</p>
+          </div>
+        </article>
+
+        <article class="project card" data-tags="ml">
+          <div class="card__media">
+            <img src="assets/projects/fake-news.svg" alt="" width="800" height="450" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>Fake News Detection</h3>
+            <p>Classifies news articles as real or fake. TF-IDF features feed a Logistic Regression model trained on 20,000+ labelled articles, reaching 97.9% accuracy on the held-out test set.</p>
+            <ul class="stack" aria-label="Tech stack"><li>Python</li><li>scikit-learn</li><li>NLP</li></ul>
+          </div>
+        </article>
+
+        <article class="project card" data-tags="ml">
+          <div class="card__media">
+            <img src="assets/projects/bigmart.svg" alt="" width="800" height="450" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>BigMart Sales Prediction</h3>
+            <p>Regression model that forecasts how much each product will sell at each outlet from item and store attributes, so stock and promotions can be planned from data.</p>
+            <ul class="stack" aria-label="Tech stack"><li>Python</li><li>scikit-learn</li><li>Data analysis</li></ul>
+          </div>
+        </article>
+
+        <article class="project card" data-tags="frontend">
+          <a class="card__media" href="https://github.com/kritika89898/Cineverse" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img src="assets/projects/cineverse.webp" alt="" width="1400" height="637" loading="lazy">
+          </a>
+          <div class="card__body">
+            <h3>CineVerse</h3>
+            <p>A streaming-platform landing page for a fictional sci-fi series: hero banner, navigation, trailer action and episode cards, built with plain HTML and CSS.</p>
+            <ul class="stack" aria-label="Tech stack"><li>HTML5</li><li>CSS3</li></ul>
+            <div class="links">
+              <a class="link" href="https://github.com/kritika89898/Cineverse" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="more"><a class="link" href="https://github.com/kritika89898?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories on GitHub</a></p>
+    </section>
+
+    <!-- Experience -->
+    <section class="section wrap" id="experience" aria-labelledby="exp-h">
+      <div class="section__head"><h2 id="exp-h">Experience</h2></div>
+      <ol class="timeline">
+        <li class="tl">
+          <div class="tl__when">Jun – Aug 2024</div>
+          <div class="tl__what">
+            <h3>Networking Intern <span>DRDO, Delhi</span></h3>
+            <p>Built a Linux packet-filtering prototype in C with eBPF and XDP, deciding to drop or pass packets in the kernel before they reach the network stack. Implemented MAC-address-based access control using eBPF maps.</p>
+            <ul class="stack"><li>C</li><li>eBPF</li><li>XDP</li><li>Linux networking</li></ul>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__when">Apr – Nov 2024</div>
+          <div class="tl__what">
+            <h3>Member <span>AWS Cloud Club, IGDTUW</span></h3>
+            <p>Conducted 10+ sessions on DSA and web development for fellow students.</p>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__when">Jun – Jul 2024</div>
+          <div class="tl__what">
+            <h3>Python &amp; Machine Learning training <span>Summer internship</span></h3>
+            <p>Training in Python, data preprocessing and supervised learning with scikit-learn.</p>
+          </div>
+        </li>
+        <li class="tl">
+          <div class="tl__when">2023 – 2027</div>
+          <div class="tl__what">
+            <h3>B.Tech, Computer Science &amp; Artificial Intelligence <span>Indira Gandhi Delhi Technical University for Women</span></h3>
+            <p>Mentee, Google Developer Student Clubs IGDTUW.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Skills -->
+    <section class="section wrap" id="skills" aria-labelledby="skills-h">
+      <div class="section__head"><h2 id="skills-h">Skills</h2></div>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>C++, C, Python, JavaScript, TypeScript, SQL, HTML, CSS</dd></div>
+        <div><dt>Backend &amp; web</dt><dd>Node.js, Express, REST APIs, serverless functions, Drizzle ORM</dd></div>
+        <div><dt>Systems</dt><dd>Linux, eBPF and XDP, computer networks, operating systems, DBMS</dd></div>
+        <div><dt>AI / ML</dt><dd>scikit-learn, NLP (TF-IDF), Gemini API, prompt design</dd></div>
+        <div><dt>Cloud &amp; tools</dt><dd>Vercel, Cloudflare Workers, Render, AWS, Google Cloud Vertex AI, Git and GitHub</dd></div>
+        <div><dt>Core CS</dt><dd>Data structures and algorithms, object-oriented programming</dd></div>
+      </dl>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section wrap" id="achievements" aria-labelledby="ach-h">
+      <div class="section__head"><h2 id="ach-h">Achievements</h2></div>
+      <ul class="wins">
+        <li><span class="wins__num">7th<small> of 60</small></span><span>Innerve Hacks 2026, IGDTUW’s first 24-hour hackathon. We built a frontend web app.</span></li>
+        <li><span class="wins__num">1521</span><span>LeetCode contest rating, with 700+ problems solved across platforms.</span></li>
+        <li><span class="wins__num">5★</span><span>HackerRank badge in Problem Solving.</span></li>
+        <li><span class="wins__num">Phase 3</span><span>S&amp;P Global hackathon: cleared Phases 1 and 2, one of 296 qualifiers for Phase 3.</span></li>
+        <li><span class="wins__num">Vertex AI</span><span>Google Cloud skill badge.</span></li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="section wrap contact" id="contact" aria-labelledby="contact-h">
+      <div class="contact__intro">
+        <h2 id="contact-h">Let’s talk</h2>
+        <p>Hiring for an SDE role, building something interesting, or curious about eBPF? Send me a note.</p>
+        <ul class="contact__links">
+          <li>
+            <a href="mailto:kritikabhanariya101@gmail.com">kritikabhanariya101@gmail.com</a>
+            <button type="button" class="copy" id="copyEmail" data-email="kritikabhanariya101@gmail.com">Copy</button>
+          </li>
+          <li><a href="https://linkedin.com/in/kritika-bhanaria-434242285" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/kritika89898" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+      <form class="form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <p class="form__error" id="formError" role="alert"></p>
+        <button class="btn" type="submit">Write email</button>
+        <p class="form__hint">Opens your email app with your message filled in.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p>© <span id="year">2026</span> Kritika Bhanaria</p>
+    <p>Hand-written HTML, CSS and JavaScript, hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
