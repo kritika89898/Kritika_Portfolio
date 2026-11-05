@@ -16,7 +16,7 @@ Personal portfolio of Kritika Bhanaria, B.Tech Computer Science & AI student at 
 
 ## Tech
 
-Plain HTML, CSS and JavaScript, no framework or build step. Hosted on GitHub Pages.
+Plain HTML, CSS and JavaScript with no framework or build step, hosted on GitHub Pages.
 
 ```
 index.html                            page markup and content
