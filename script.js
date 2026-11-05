@@ -123,6 +123,7 @@ const LINKS = {
   cineverse: 'https://github.com/kritika89898/Cineverse',
   github: 'https://github.com/kritika89898',
   linkedin: 'https://linkedin.com/in/kritika-bhanaria-434242285',
+  leetcode: 'https://leetcode.com/u/maIEphSvuk/',
   resume: 'https://drive.google.com/file/d/1MD1mdOTZtzz-3Khr2-LRqMDIds7-cI4m/view?usp=drive_link',
 };
 
@@ -134,6 +135,7 @@ const COMMANDS = {
     ['', '  open <name>   open a project or profile in a new tab'],
     ['', '  experience    where I have worked'],
     ['', '  skills        languages and tools'],
+    ['', '  leetcode      problems solved, rating and streak'],
     ['', '  contact       how to reach me'],
     ['', '  resume        open my resume'],
     ['', '  theme         switch light / dark'],
@@ -170,6 +172,7 @@ const COMMANDS = {
     ['', 'email     ', { href: 'mailto:' + EMAIL, text: EMAIL }],
     ['', 'linkedin  ', { href: LINKS.linkedin, text: 'kritika-bhanaria' }],
     ['', 'github    ', { href: LINKS.github, text: 'kritika89898' }],
+    ['', 'leetcode  ', { href: LINKS.leetcode, text: 'maIEphSvuk' }],
   ],
   resume: () => openLink('resume'),
   theme: () => {
@@ -187,7 +190,7 @@ function openLink(key) {
     return [['dim', `${k} has no public link yet. Ask me for the code.`]];
   }
   if (!LINKS[k]) {
-    return [['warn', `no project called '${key}'. try: examforge, protools, colorwars, cineverse, github, linkedin`]];
+    return [['warn', `no project called '${key}'. try: examforge, protools, colorwars, cineverse, github, linkedin, leetcode`]];
   }
   window.open(LINKS[k], '_blank', 'noopener');
   return [['ok', `opening ${k}...`]];
