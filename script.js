@@ -156,15 +156,13 @@ const COMMANDS = {
     ['dim', "try 'open examforge'"],
   ],
   experience: () => [
-    ['ok', 'DRDO, Delhi  Networking Intern  Jun–Aug 2024'],
-    ['', '  packet filter in C with eBPF/XDP, MAC-based access control via eBPF maps'],
     ['ok', 'AWS Cloud Club, IGDTUW  Member  Apr–Nov 2024'],
     ['', '  10+ sessions on DSA and web development'],
   ],
   skills: () => [
     ['', 'lang     C++  C  Python  JavaScript  TypeScript  SQL'],
     ['', 'web      Node.js  Express  REST  serverless'],
-    ['', 'systems  Linux  eBPF  XDP  networking'],
+    ['', 'systems  Linux  networking  OS  DBMS'],
     ['', 'ml       scikit-learn  NLP  Gemini API'],
     ['', 'cloud    Vercel  Cloudflare  Render  AWS  GCP'],
   ],

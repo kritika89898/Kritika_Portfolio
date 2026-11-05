@@ -9,7 +9,7 @@ Personal portfolio of Kritika Bhanaria, B.Tech Computer Science & AI student at 
 - **Interactive terminal** in the hero: try `help`, `projects`, `leetcode`, `open examforge`
 - **LeetCode heatmap**: submissions over the last year, problems solved, contest rating and streaks
 - **Projects** with live links, source code and demo videos, filterable by Full-stack, AI / ML and Frontend
-- **Experience** timeline (DRDO networking internship: eBPF/XDP packet filter in C)
+- **Experience** timeline, skills and achievements
 - **Skills**, **achievements** and a **contact** form that opens your email app
 - Light and dark themes (follows your system setting, remembers your choice)
 - Responsive down to small phones, keyboard accessible, respects reduced-motion settings
